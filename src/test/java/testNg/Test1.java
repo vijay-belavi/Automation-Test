@@ -1,6 +1,5 @@
 package testNg;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class Test1 extends BaseClass{
