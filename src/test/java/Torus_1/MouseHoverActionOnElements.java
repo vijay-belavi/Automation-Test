@@ -13,7 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.config.WebDriverManagerException;
 
-public class ActionOnElements {
+public class MouseHoverActionOnElements {
 
 	public static void main(String[] args) throws Throwable {
 		// Example usage:
