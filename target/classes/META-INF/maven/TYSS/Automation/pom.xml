@@ -5,8 +5,16 @@
 	<groupId>TYSS</groupId>
 	<artifactId>Automation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<repositories>
+		<repository>
+			<id>AsposeJavaAPI</id>
+			<name>Aspose Java API</name>
+			<url>https://releases.aspose.com/java/repo/</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
+
 		<!-- WebDriverManager for Selenium -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
@@ -26,6 +34,13 @@
 			<groupId>org.bytedeco</groupId>
 			<artifactId>javacv-platform</artifactId>
 			<version>1.5.11</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6.12</version>
 		</dependency>
 
 		<!--
@@ -180,23 +195,31 @@
 			<artifactId>core</artifactId>
 			<version>3.5.2</version>
 			<exclusions>
-                <exclusion>
-                    <groupId>org.apache.groovy</groupId>
-                    <artifactId>groovy-xml</artifactId>
-                </exclusion>
-            </exclusions> <!-- Use the latest version -->
+				<exclusion>
+					<groupId>org.apache.groovy</groupId>
+					<artifactId>groovy-xml</artifactId>
+				</exclusion>
+			</exclusions> <!--
+			Use the latest version -->
 		</dependency>
-		
+		<!-- https://mvnrepository.com/artifact/com.aspose/aspose-cells -->
+		<dependency>
+			<groupId>com.aspose</groupId>
+			<artifactId>aspose-cells</artifactId>
+			<version>25.1</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>javase</artifactId>
 			<version>3.5.2</version>
 			<exclusions>
-                <exclusion>
-                    <groupId>org.apache.groovy</groupId>
-                    <artifactId>groovy-xml</artifactId>
-                </exclusion>
-            </exclusions> <!-- Use the latest version -->
+				<exclusion>
+					<groupId>org.apache.groovy</groupId>
+					<artifactId>groovy-xml</artifactId>
+				</exclusion>
+			</exclusions> <!--
+			Use the latest version -->
 		</dependency>
 
 		<!-- Custom Program Elements -->
